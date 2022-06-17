@@ -1,5 +1,5 @@
 ; //asignar un nombre y versión al cache
-const CACHE_NAME = 'my_first_wpa_v1',
+const CACHE_NAME = 'my_first_wpa_v1.1',
   urlsToCache = [
     './',
     './style.css',
