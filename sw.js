@@ -1,7 +1,9 @@
-//asignar un nombre y versión al cache
+// self.importScripts('data/games.js')
+
 const cache_version = 'mi_cache_v1.2'
 const urlsToCache = [
   './',
+  './index.html',
   './style.css',
   './script.js',
   './img/icon_v_1024.png',
@@ -12,7 +14,7 @@ self.addEventListener('install', (e) => {
   e.waitUntil((async () => {
     const cache = await caches.open(cache_version)
     await cache.addAll(urlsToCache)
-    ; self.skipWaiting()
+    self.skipWaiting()
   })())
 })
 
@@ -22,7 +24,6 @@ self.addEventListener('activate', (e) => {
       if (key !== cache_version) return caches.delete(key)
     }))
     .then(() => self.clients.claim())
-    ;;
   }))
 })
 
