@@ -7,8 +7,14 @@ alert(11)
 const button = document.getElementById('notifications');
 button.addEventListener('click', () => {
   Notification.requestPermission().then((result) => {
+    alert(result)
     if (result === 'granted') {
-      randomNotification();
+      try {
+        
+        randomNotification();
+      } catch (e) {
+        document.write(e)
+      }
     }
   });
 });
