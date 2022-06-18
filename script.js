@@ -1,7 +1,7 @@
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js')
 }
-alert(11)
+alert(12)
 
 
 const button = document.getElementById('notifications');
