@@ -1,6 +1,7 @@
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js')
 }
+alert(11)
 
 
 const button = document.getElementById('notifications');
@@ -21,5 +22,5 @@ function randomNotification() {
     icon: notifImg,
   };
   new Notification(notifTitle, options);
-  //setTimeout(randomNotification);
+  setTimeout(randomNotification);
 }
