@@ -1,6 +1,6 @@
 // self.importScripts('data/games.js')
 
-const cache_version = 'mi_cache_v1.9'
+const cache_version = 'mi_cache_v1.10'
 const urlsToCache = [
   './',
   './index.html',
